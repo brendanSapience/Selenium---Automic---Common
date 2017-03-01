@@ -9,4 +9,12 @@ public class Msgs {
 	public static void showError(String s){
 		System.out.println("\t -- Error: " + s);
 	}
+	
+	public static void showSuccess(String s){
+		System.out.println("\t ++ Success: " + s);
+	}
+	
+	public static void showButtonFound(){
+		System.out.println("\t ++ Element Found!");
+	}
 }

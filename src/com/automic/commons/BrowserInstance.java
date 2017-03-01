@@ -38,7 +38,7 @@ public class BrowserInstance {
 			File file = new File(this.DriverFile);
 	    	System.setProperty(ChromeProperty, file.getAbsolutePath());
 	    	ChromeOptions options = new ChromeOptions();
-	        options.addArguments(this.UserData);
+	        if(!this.UserData.equals("")){options.addArguments(this.UserData);}
 	        //options.addArguments("--start-maximized"); // do we need this?	        
 	        this.driver = new ChromeDriver(options);
 	        this.driver.manage().window().maximize(); 
